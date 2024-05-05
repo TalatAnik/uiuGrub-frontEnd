@@ -9,15 +9,14 @@ MainList.propTypes = {
 
 
 function MainList(props) {
-  const {items} =props
 
   return (
     <Stack direction="column" spacing={1} >
 
-      {items.map((item)=>{
-        console.log(item.id)
+      {props.items.map((item)=>{
+        
         return(
-          <Item key={item.index} item={item}></Item>
+          <Item key={item.id} item={item}></Item>
         )
         
       })}
@@ -28,5 +27,8 @@ function MainList(props) {
     </Stack>
   )
 }
+
+
+
 
 export default MainList

@@ -49,6 +49,7 @@ function Login() {
         setError(false)
         localStorage.setItem('userId', name)
         localStorage.setItem('isLoggedIn', 'true')
+        localStorage.setItem('userType', 'customer')
         navigate("/")
       })
       .catch(error => {

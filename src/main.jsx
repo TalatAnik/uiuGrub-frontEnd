@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import Home from './pages/Home.jsx'
 import Restaurant from './pages/Restaurant.jsx'
 import Login from './pages/Login.jsx'
+import Signup from './pages/Signup.jsx'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './index.css'
 import { ThemeProvider, createTheme } from '@mui/material'
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/Signup",
+    element: <Signup />,
   },
 ]);
 
